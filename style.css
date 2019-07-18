@@ -1,0 +1,589 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+img {
+	max-width: 100%;
+}
+
+/*font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;*/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
+	color: #2d2d2d;
+}
+
+.package img {
+	height: 50px;
+}
+
+.package {
+	display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav .nav-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.nav .nav-items li {
+	list-style: none;
+}
+
+.nav .nav-items a {
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	color: #e2574c;
+	font-family: 'Raleway', sans-serif;
+	transition: 0.3s;
+}
+
+.nav .nav-items a:click {
+	color: #b64036;
+}
+
+.banner {
+	background:linear-gradient(
+		rgba(0,0,0,0.25) 0%,
+		rgba(0,0,0,0.25) 100%
+	),
+	url('images/banner-girl.png') no-repeat center 30px,
+	url('images/flower-bkgd.jpg') repeat-x center top;
+	background-size: cover, contain, cover;
+	height: 400px;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner h1 {
+	text-transform: uppercase;
+	font-size: 2.0rem;
+	color: #ffffff;
+}
+
+.banner p {
+	font-size: 4.0rem;
+	font-family: 'Playfair Display', serif;
+	line-height: 7.5px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.brandDetail, .productsH1 {
+	padding: 30px;
+	text-align: center;
+}
+
+.brandDetail h1, .products h1, .eMail h1 {
+	font-size: 2.7rem;
+	margin-top: 0px;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.brandDetail h1 span, .products h1 span, .eMail h1 span {
+	font-weight: bold;
+	font-style: normal;
+}
+
+.brandDetail p {
+	font-size: 1.4rem;
+	line-height: 30px;
+	font-weight: normal;
+}
+
+.gallery h1 {
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.gallery h3 {
+	font-family: 'Raleway', sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 65px 0;
+    margin: 0
+}
+
+.man {
+    background-image: url(images/mens-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+.trends {
+    background-image: url(images/trends-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 50%;
+    margin-right: 5px;
+  }
+
+.glasses {
+    background-image: url(images/glasses-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 50%;
+    margin-left: 5px;
+  }
+
+.sale {
+    background-image: url(images/sale-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 50%;
+    margin-right: 5px;
+}
+
+.bags {
+    background-image: url(images/bags-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 50%;
+    margin-left: 5px;
+}
+
+.women {
+    background-image: url(images/womens-category.jpg);
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.mobGroup1,
+.mobGroup2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobGroup2 {
+    margin-top: 10px;
+}
+
+* { box-sizing: border-box; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: 300px;
+}
+.main-carousel {
+    width: 100%;
+    text-align: center;
+    height: 450px;
+}
+
+.carousel-cell h3 {
+	color: #969696;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+}
+
+.carousel-cell h2 {
+	color: #e2574c;
+	font-size: 2.5rem;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.carousel-cell a {
+	display: none;
+}
+
+.eMail {
+	text-align: center;
+	padding: 10px;
+	background-image: url(images/wave-bkgd.jpg);
+	background-size: auto;
+    background-position: bottom, 40px;
+	margin-top: 70px;
+	height: 275px;
+}
+
+.eMail h1 {
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 0;
+}
+
+.eMail p {
+	font-size: 1.5rem;
+	line-height: 30px;
+	color: white;
+}
+
+.eMail input:focus{
+  outline: none;
+}
+
+.eMail input {
+    border: none;
+}
+
+.eMail .sub-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eMail form {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 3px;
+    border-radius: 30px;
+}
+
+.eMail .subs{
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #e2574c;
+}
+
+footer {
+	color: white;
+	background-color: #242424;
+	padding: 40px 5px;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.upperPart, .middle, .lowerPart  {
+	line-height: 10px;
+	margin-bottom: 30px;
+}
+
+.middle a {
+	font-size: 1.4rem;
+	color: white;
+	transition: 0.3s;
+}
+
+.middle a:hover {
+	color: #b64036;
+
+}
+
+.lowerPart {
+	color: #969696;
+}
+
+.rightFooter .icons {
+	letter-spacing: 10px;
+}
+
+footer .names {
+	display: none;
+}
+
+@media screen and (min-width: 600px) {
+
+	body {
+		font-size: 1.6rem;
+	}
+
+	.banner {
+		height: 500px;
+	}
+
+	.combine {
+		padding: 10px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.nav ul{
+	    border:0;
+	    padding: 0;
+	    padding-right: 50px;
+	}
+
+	.nav {
+		flex: 1;
+	}
+
+	.package{
+   		display: contents;
+	}
+
+	.cartLogo {
+		order: 1;
+	}
+
+	.brandDetail h1, .products h1, .eMail h1 {
+		font-size: 3.0rem;
+	}
+
+	.brandDetail p {
+		font-size: 1.6rem;
+	}
+
+	.mobGroup1, .mobGroup2 {
+		display: contents;
+	}
+
+	.season {
+		display: flex;
+   		flex-direction: row;
+	}
+
+	.banner h1 {
+		font-size: 2.4rem;
+	}
+
+	.banner p {
+		font-size: 5.0rem;
+	}
+
+	.banner .year {
+		padding-left: 15px;
+	}
+
+	.brandDetail p {
+		padding: 0 15px;
+	}
+
+	.tabGroup1, .tabGroup2 {
+		display: flex;
+	}
+
+	.tabGroup1 .man, .trends, .glasses {
+		max-height: 150px;
+	}
+
+	.tabGroup2 .sale, .bags, .women {
+		max-height: 150px;
+	}
+
+	.gallery .man {
+		margin-right: 7.5px;
+		min-width: 50%;
+	}
+
+	.gallery .women {
+		margin-top: 0;
+		margin-left: 7.5px;
+		min-width: 50%;
+	}
+
+	.mobGroup1 {
+		max-width: 50%;
+	}
+
+	.main-carousel {
+		width: 50%;
+	}
+
+	.carousel-cell h3 {
+		padding-bottom: 30px;
+		font-size: 1.6rem;
+	}
+
+	.carousel-cell h2 {
+		font-size: 3.5rem;
+		font-weight: 500;
+		padding: 0 20px;
+	}
+
+	.carousel-cell a {
+		padding: 7px 12.5px;
+		color: white;
+		background-color: black;
+		border-radius: 25px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1.4rem;
+		display: unset;
+		font-size: 1.6rem;
+	}
+
+	.eMail p {
+		font-size: 2.0rem;
+		padding: 0 30px;
+	}
+
+	.attach {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.leftFooter {
+		text-align: left;
+		font-size: 1.8rem;
+	}
+
+	.rightFooter {
+		display: flex;
+		padding: 0 20px;
+	}
+
+	.rightFooter .icons {
+		display: flex;
+		flex-direction: column;
+		min-height: 150px;
+		justify-content: space-between;
+	}
+
+	.icons i {
+		font-size: 1.8rem;
+		transition: 0.3s;
+	}
+
+	.icons i:hover {
+		color: #b64036;
+	}
+
+	.rightFooter .names {
+		display: flex;
+		flex-direction: column;
+		min-height: 150px;
+		justify-content: space-between;
+	}
+
+	.names a {
+		font-size: 1.8rem;
+		color: white;
+		text-align: left;
+		text-decoration: none;
+		transition: 0.3s;	
+	}
+
+	.names a:hover {
+		color: #b64036;
+	}
+	
+}
+
+@media screen and (min-width: 1240px) {
+
+	body {
+		font-size: 1.8rem;
+	}
+
+	.banner {
+		height: 600px;
+	}
+
+	.banner h1 {
+		font-size: 3.0rem;
+	}
+
+	.banner p {
+		font-size: 6.0rem;
+	}
+
+	.brandDetail {
+		padding: 70px 50px;
+	}
+
+	.banner .year {
+		font-size: 6.0rem;
+	}
+
+	.combine {
+		padding: 20px;
+	}
+
+	.combine img {
+		height: 65px;
+	}
+
+	.nav .nav-items a {
+		font-size: 2.5rem;
+	}
+
+	.nav .nav-items a:hover {
+		color: #b64036;
+	}
+
+	.products {
+		padding: 70px 0;
+	}
+
+	.brandDetail h1, .products h1, .eMail h1 {
+		font-size: 4.3rem
+	}
+
+	.brandDetail h1 span, .products h1 span, .eMail h1 span {
+		font-size: 4.5rem;
+	}
+
+	.brandDetail p {
+		font-size: 2.2rem;
+	}
+
+	.main-carousel {
+		width: 25%;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
